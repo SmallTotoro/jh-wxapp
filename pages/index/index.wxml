@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button class="weui-btn" type="default" plain="true" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">获取授权</button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class="usermotto">
+    <button class="weui-btn" type="default" plain="true" bindtap="home" wx:if="{{hasUserInfo}}">进入首页</button>
+    <text class="user-motto"></text>
+  </view>
+   <view class="weui-footer">
+      <view class="weui-footer__text">www.weijunhe.com</view>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+<view class="page">
+  <view class="page__bd">
+    <view class="weui-panel weui-panel_access">
+      <view class="weui-panel__bd">
+        <block wx:for="{{activities}}" wx:key="*this" wx:for-index="activityIndex" wx:for-item="item">
+          <navigator url="../activityView/activityView?id={{item.id}}&title={{item.title}}&content={{item.content}}&author={{item.author}}&status={{item.status}}&createtime={{item.createtime}}" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+            <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+              <image class="weui-media-box__thumb" src="https://www.weijunhe.com/static/img/logo.png" />
+            </view>
+            <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+              <view class="weui-media-box__title">{{item.title}}</view>
+              <view class="weui-media-box__desc">{{item.content}}</view>
+            </view>
+            <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+          </navigator>
+        </block>
+
+      </view>
+    </view>
+  
+   <view class="weui-footer">
+      <view class="weui-footer__text">www.weijunhe.com</view>
+    </view>
+  </view>
+</view>

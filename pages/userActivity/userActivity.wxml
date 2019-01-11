@@ -1,0 +1,41 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">我的报名</view>
+  </view>
+  <view class="page__bd">
+
+    <block wx:for="{{activities}}" wx:key="*this" wx:for-index="activityIndex" wx:for-item="item">
+
+      <view class="weui-form-preview">
+        <view class="weui-form-preview__hd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">活动:</view>
+            <view class="weui-form-preview__value_in-hd">{{item.activity.title}}</view>
+          </view>
+        </view>
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">发布人:</view>
+            <view class="weui-form-preview__value">{{item.activity.author}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">创建时间：</view>
+            <view class="weui-form-preview__value">{{item.activity.createtime}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label"></view>
+            <view class="weui-form-preview__value">{{item.activity.content}}</view>
+          </view>
+        </view>
+        <view class="weui-form-preview__ft">
+          <navigator url="" id="{{item.party.id}}" bindtap='cancelParty' class="weui-form-preview__btn weui-form-preview__btn_primary" hover-class="weui-form-preview__btn_active">取消报名</navigator>
+        </view>
+      </view>
+    </block>
+
+     <view wx:if="{{activities.length==0}}" class="weui-footer">
+      <view class="weui-footer__text">未查到相关信息</view>
+    </view>
+
+  </view>
+</view>

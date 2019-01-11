@@ -1,0 +1,10 @@
+.page__hd {
+  padding: 0px;
+}
+
+.weui-grid__icon {
+  display: block;
+  width: 60px;
+  height: 55px;
+  margin: 0 auto;
+}

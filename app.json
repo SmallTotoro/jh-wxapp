@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/user/user",
+    "pages/about/about",
+    "pages/activityList/activityList",
+    "pages/activityView/activityView",
+    "pages/userActivity/userActivity"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "给我一点时间",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "home.png",
+        "selectedIconPath": "home-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "我的",
+        "iconPath": "user.png",
+        "selectedIconPath": "user-active.png"
+      },
+      {
+        "pagePath": "pages/about/about",
+        "text": "关于",
+        "iconPath": "about.png",
+        "selectedIconPath": "about-active.png"
+      }
+    ]
+  },
+  "networkTimeout": 30000
+}

@@ -1,0 +1,50 @@
+<view class="page">
+
+  <view class="page__hd">
+    <view class="page__title">活动：{{title}}</view>
+    <view class="page__desc">发布人：{{author}}</view>
+    <view class="page__desc">创建时间：{{createtime}}</view>
+    <view class="page__desc">已报名：{{count}} 人</view>
+    <view class="page__desc">{{content}}</view>
+       
+    
+  </view>
+
+  <view class="page__bd page__bd_spacing">
+    <view class="userinfo">
+      <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </view>
+    <form bindsubmit='submitForm'>
+      <view class="weui-cells weui-cells_after-title" wx:if="{{status==1}}">
+        <view class="weui-cell weui-cell_input">
+          <view class="weui-cell__hd">
+            <view class="weui-label">姓名</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" bindinput="getname" name="name" placeholder="请输入您的姓名" />
+          </view>
+        </view>
+
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">手机号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" bindinput="getphone" type="number" name="tel" placeholder="请输入您的手机号" />
+          </view>
+        </view>
+      </view>
+
+      <view class="weui-cells">
+        <button class="weui-btn" type="primary" form-type='submit' wx:if="{{status==1}}">我要去！</button>
+        <button class="weui-btn" type="default" disabled="true" wx:else>活动已结束</button>
+      </view>
+    </form>
+
+    <view class="weui-footer">
+      <view class="weui-footer__text">www.weijunhe.com</view>
+    </view>
+
+  </view>
+</view>

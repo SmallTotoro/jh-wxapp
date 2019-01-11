@@ -1,0 +1,55 @@
+.flag1 {
+  padding: 2px 10px;
+  background-color: orange;
+  margin: 5px;
+  border-radius: 45px;
+  color: white;
+    display:inline-block;
+}
+
+.flag2 {
+  padding: 2px 10px;
+  background-color: orangered;
+  margin: 5px;
+  border-radius: 45px;
+  color: white;
+    display:inline-block;
+}
+
+.flag3 {
+  padding: 2px 10px;
+  background-color: thistle;
+  margin: 5px;
+  border-radius: 45px;
+  color: white;
+    display:inline-block;
+}
+.flag4 {
+  padding: 2px 10px;
+  background-color: lightcoral;
+  margin: 5px;
+  border-radius: 45px;
+  color: white;
+  display:inline-block;
+}
+.flag5{
+  padding: 2px 10px;
+  background-color: rgb(88, 141, 67);
+  margin: 5px;
+  border-radius: 45px;
+  color: white;
+  display:inline-block;
+}
+
+.page__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: #888888;
+    text-align: center;
+    font-size: 18px;
+}

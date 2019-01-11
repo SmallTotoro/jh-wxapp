@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="page__hd" style="text-align:center;">
+    <image src="../img/logo.png" style="width:50px;width:100px;height:100px"></image>
+    <view class="page__title">
+      <text style="line-height:40px;">给我一点时间</text>
+    </view>
+  </view>
+  <view class="page__desc">
+    <p class="flag1">码农</p>
+    <p class="flag2">很穷</p>
+    <p class="flag3">程序猿</p>
+    <p class="flag4">会瘦</p>
+    <p class="flag5">炫酷</p>
+    <p class="flag4">好嗨哟</p>
+    <p class="flag2">不觉明历</p>
+
+  </view>
+  <view class="page__desc">
+    <text>感谢您的支持！</text>
+  </view>
+</view>
